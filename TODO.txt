@@ -1,0 +1,8 @@
+- Add a build script/Makefile to minify the code
+- Add unit tests (Jasmine? other?)
+- Add functional rendering code
+- Add functional code for managing temporary visual effects based on game state changes
+- Add non-functional code to "run" the game
+    - event listener to translate and queue events
+    - renderer to translate output of functional render code
+    - game loop based on requestAnimationFrame()
