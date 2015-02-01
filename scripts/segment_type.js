@@ -1,0 +1,33 @@
+define(['direction'], function (Dir) {
+    return { LEFT_TO_TOP:      Dir.combine( Dir.LEFT,    Dir.UP)
+           , LEFT_TO_RIGHT:    Dir.combine( Dir.LEFT, Dir.RIGHT)
+           , LEFT_TO_BOTTOM:   Dir.combine( Dir.LEFT,  Dir.DOWN)
+           , TOP_TO_LEFT:      Dir.combine(   Dir.UP,  Dir.LEFT)
+           , TOP_TO_RIGHT:     Dir.combine(   Dir.UP, Dir.RIGHT)
+           , TOP_TO_BOTTOM:    Dir.combine(   Dir.UP,  Dir.DOWN)
+           , RIGHT_TO_LEFT:    Dir.combine(Dir.RIGHT,  Dir.LEFT)
+           , RIGHT_TO_TOP:     Dir.combine(Dir.RIGHT,    Dir.UP)
+           , RIGHT_TO_BOTTOM:  Dir.combine(Dir.RIGHT,  Dir.DOWN)
+           , BOTTOM_TO_LEFT:   Dir.combine( Dir.DOWN,  Dir.LEFT)
+           , BOTTOM_TO_TOP:    Dir.combine( Dir.DOWN,    Dir.UP)
+           , BOTTOM_TO_RIGHT:  Dir.combine( Dir.DOWN, Dir.RIGHT)
+
+           , HEAD_LEFT_TO_TOP:      16 + Dir.combine( Dir.LEFT,    Dir.UP)
+           , HEAD_LEFT_TO_RIGHT:    16 + Dir.combine( Dir.LEFT, Dir.RIGHT)
+           , HEAD_LEFT_TO_BOTTOM:   16 + Dir.combine( Dir.LEFT,  Dir.DOWN)
+           , HEAD_TOP_TO_LEFT:      16 + Dir.combine(   Dir.UP,  Dir.LEFT)
+           , HEAD_TOP_TO_RIGHT:     16 + Dir.combine(   Dir.UP, Dir.RIGHT)
+           , HEAD_TOP_TO_BOTTOM:    16 + Dir.combine(   Dir.UP,  Dir.DOWN)
+           , HEAD_RIGHT_TO_LEFT:    16 + Dir.combine(Dir.RIGHT,  Dir.LEFT)
+           , HEAD_RIGHT_TO_TOP:     16 + Dir.combine(Dir.RIGHT,    Dir.UP)
+           , HEAD_RIGHT_TO_BOTTOM:  16 + Dir.combine(Dir.RIGHT,  Dir.DOWN)
+           , HEAD_BOTTOM_TO_LEFT:   16 + Dir.combine( Dir.DOWN,  Dir.LEFT)
+           , HEAD_BOTTOM_TO_TOP:    16 + Dir.combine( Dir.DOWN,    Dir.UP)
+           , HEAD_BOTTOM_TO_RIGHT:  16 + Dir.combine( Dir.DOWN, Dir.RIGHT)
+
+           , TAIL_LEFT:   Dir.combine( Dir.LEFT,  Dir.LEFT)
+           , TAIL_TOP:    Dir.combine(   Dir.UP,    Dir.UP)
+           , TAIL_RIGHT:  Dir.combine(Dir.RIGHT, Dir.RIGHT)
+           , TAIL_BOTTOM: Dir.combine( Dir.DOWN,  Dir.DOWN)
+    };
+});
